@@ -1,0 +1,218 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: hsl(0, 100%, 74%);
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    background: url(/images/bg-intro-mobile.png) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.texts {
+    color: #fff;
+    text-align: center;
+    margin: 5.8em 0 0.7em 0;
+}
+h1 {
+    margin: auto;
+    padding: 0 1em 1.3em 1em;
+    font-size: 1.9em;
+    font-weight: 600;
+    line-height: 1.3em;
+}
+
+h3{
+    padding: 0 2em;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
+.btn-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 1.5em;
+    color: #fff;
+    font-weight: 300;
+}
+
+button {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    border: none;
+}
+
+.purple-btn {
+    background-color: hsl(248, 32%, 49%);
+    width: 100%;
+    padding: 1em 3em;
+    text-align: center;
+    line-height: 1.7em;
+    margin-bottom: 1em;
+    border-radius: 0.7em;
+    box-shadow:  0 0.5em 0 rgba(0, 0, 0, 0.15);
+}
+
+.purple-btn strong {
+    font-weight: 600;
+}
+
+.data {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.7em;
+    box-shadow:  0 0.5em 0 rgba(0, 0, 0, 0.15)
+}
+
+.inputs {
+    align-items: center;
+    margin: auto;
+}
+
+.form-control {
+    font-family: 'Poppins', sans-serif;
+    color: hsl(249, 10%, 26%);
+    font-weight: 700;
+    margin: 1.5em 1.5em 0 1.5em;
+    padding: 1em;
+    border: 0.08em solid hsl(245, 22%, 90%);
+    border-radius: 0.4em;
+    width: calc(100% - 3em);
+    height: 4em;
+}
+
+.form-control:invalid {
+    border: 0.1em solid hsl(350, 88%, 52%);
+}
+
+.green-btn {
+    background-color: hsl(154, 59%, 51%);
+    padding: 1em;
+    margin: 1em 1.5em 0.5em 1.5em;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    border-radius: 0.4em;
+    box-shadow:  inset 0 -0.2em 0 rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.green-btn:hover {
+    background-color: hsl(154, 69%, 24%);
+    transition: 0.3s;
+}
+
+.green-btn:active {
+    background-color: hsl(153, 76%, 76%);
+}
+
+.agreement {
+    color: hsl(246, 25%, 77%);
+    font-size: 0.7em;
+    text-align: center;
+    padding: 0.5em 4em 2em 4em;
+    line-height: 1.7em;
+}
+
+.agreement strong {
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding-top: 2em;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: #fff;
+}
+.attribution a { 
+    color: hsl(0, 78%, 91%); 
+}
+
+@media (min-width: 901px) {
+    main {
+        max-width: 1440px;
+        width: 100%;
+        max-height: 800px;
+        height: 100%;
+        background: url(/images/bg-intro-desktop.png) no-repeat;
+        background-size: cover;
+    }
+
+    .texts {
+        max-width: 50%;
+        height: 90%;
+        text-align: left;
+        margin: auto;
+        padding: 6.5em 4em 2em 10em;
+    }
+
+    .btn-form {
+        max-width: 50%;
+        margin: 7em auto 0 auto;
+        padding: 0 9em 6em 1.7em;
+    }
+
+    h1 {
+        font-size: 3.2em;
+        padding: 0;
+    }
+
+    h3 {
+        padding: 2em 0 0 0;
+    }
+
+    .purple-btn {
+        height: 4rem;
+        font-size: 1rem;
+        margin-bottom: 1.5em;
+    }
+
+    .data {
+        height: 90%;
+        width: 100%;
+        padding: 1em 3em;
+    }
+
+    .form-control {
+        padding: 0 3em;
+        margin: 0.7em 0;
+        height: 4.5em;
+        width: 100%;
+    }
+
+   .green-btn {
+       margin: 0;
+       width: 100%;
+       height: 4rem;
+       font-size: 1rem;
+   }
+
+   .agreement {
+    padding: 0.5em 0 2em 0;
+   }
+
+    footer {
+        margin: 0 auto;
+        padding: 0;
+    }
+}

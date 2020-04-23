@@ -15,12 +15,14 @@ The designs were created to the following widths:
 - Green: hsl(154, 59%, 51%)
 
 ### Accent
-
+<!-- cor do btn purple -->
 - Blue: hsl(248, 32%, 49%)
 
 ### Neutral
 
+<!-- cor da letra dos forms -->
 - Dark Blue: hsl(249, 10%, 26%) 
+<!-- cor da letra do btn verde -->
 - Grayish Blue: hsl(246, 25%, 77%)
 
 ## Typography

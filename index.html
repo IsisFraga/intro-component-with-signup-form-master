@@ -5,38 +5,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/reset.css">
+  <link rel="stylesheet" href="CSS/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   
   <title>Frontend Mentor | Intro component with sign up form</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <main>
+    <div class="texts">
+      <h1 tabindex="0">
+        <strong>Learn to code by watching others</strong>
+      </h1>
+      <h3 tabindex="0">
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable. 
+      </h3>
+    </div>
 
-  Learn to code by watching others
+    <div class="btn-form">
+      <button class="purple-btn" tabindex="0">
+        <strong>Try it free 7 days</strong> then $20/mo. thereafter
+      </button>
+      <form class="data">
+        <div class="inputs">
+          <input type="text" class="form-control" id="1name" name="1name" placeholder="First Name" autofocus onsubmit="required()" tabindex="0">
+          <input type="text" class="form-control" id="lname" name="lname" placeholder="Last Name" onsubmit="required()" tabindex="0">
+          <input type="email" class="form-control" id="email" name="email" placeholder="Email Adress" onsubmit="required()" tabindex="0">
+          <input type="password" class="form-control" id="pwd" name="pwd" placeholder="Password" onsubmit="required()" tabindex="0">
+        </div>
+        <button class="green-btn" tabindex="0">
+          Claim your free trial 
+        </button>
+        <div class="agreement" tabindex="0">
+          By clicking the button, you are agreeing to our 
+          <strong>Terms and Services</strong>
+        </div>
+      </form>
+    </div>
 
-  See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-  but understanding how developers think is invaluable. 
-
-  Try it free 7 days then $20/mo. thereafter
-
-  First Name 
-  Last Name 
-  Email Address
-  Password
-
-  Claim your free trial 
-
-  By clicking the button, you are agreeing to our Terms and Services
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+    <footer>
+      <p class="attribution" tabindex="0">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://www.linkedin.com/in/isis-fraga/">Isis Fraga</a>.
+      </p>
+    </footer>
+  </main>
 </body>
 </html>
